@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/liveasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wappgo"
+        android:fontFamily="@font/font1"
+        android:textColor="#93d2f3"
+        android:textSize="28sp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/liveasy"
+        android:src="@drawable/ic_vertical" />
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gallery"
+        android:layout_marginTop="20dp"
+        android:text="PLease Select Your Language"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/head2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="You can change your language\n at any time"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/head2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_rectangle"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_vector__4_" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_vector__3_" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:paddingStart="90dp"
+        android:paddingEnd="90dp"
+        android:background="#2e3b62"
+        android:textColor="@color/white"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

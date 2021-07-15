@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146933757474",
+    "project_id": "transportlogin-a42f2",
+    "storage_bucket": "transportlogin-a42f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146933757474:android:4159d1b9eb131ecce63c7b",
+        "android_client_info": {
+          "package_name": "com.example.transportlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146933757474-2imsifjltb8e1rtmnt696uh2u4kmnssv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOCWamVmF_LbRCBThhS1q5OYZCCAP3jl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146933757474-2imsifjltb8e1rtmnt696uh2u4kmnssv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

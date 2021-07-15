@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TransportLogin</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>French</item>
+        <item>Spainsh</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_vector__4_" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_vector__3_" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <TextView
+        android:id="@+id/enternumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:text="Please enter your mobile number"
+        android:justificationMode="inter_word"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/enternumber"
+        android:layout_marginTop="20dp"
+        android:text="You'll receive a 6 digit code \nto verify next"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+    <RelativeLayout
+        android:id="@+id/contactcredentilas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guide"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_rectangle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/cpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="10"
+                android:background="@null"
+                android:paddingVertical="10dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Mobile Number"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/conti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactcredentilas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle_cont"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
